@@ -266,9 +266,9 @@ do
 				INSTALL_TYPE="${STD_INSTALL_TYPE}"
 			else
 				INSTALL_TYPE="$2"
+				shift
 			fi
 			echo "install type set to ${INSTALL_TYPE}"
-			shift
 			;;
 		-r|--remove)
 			echo "detected remove param"
@@ -277,9 +277,9 @@ do
                                 REMOVE_TYPE="${STD_REMOVE_TYPE}"
                         else
                                 REMOVE_TYPE="$2"
+				shift
                         fi
 			echo "remove type set to ${REMOVE_TYPE}"
-                        shift
 			;;
     		-p|--path)
 			echo "detected path param"
