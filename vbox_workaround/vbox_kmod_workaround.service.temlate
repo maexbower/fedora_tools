@@ -3,7 +3,7 @@ Description=Runs the Workaround Script that builds the kernel modules again so t
 
 [Service]
 Type=oneshot
-ExecStart=/usr/local/bin/vbox_workaround.sh -a
+ExecStart=!PathToScript!/vbox_workaround.sh -a
 
 [Install]
 WantedBy=multi-user.target
