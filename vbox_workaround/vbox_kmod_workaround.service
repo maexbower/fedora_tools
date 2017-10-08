@@ -1,0 +1,9 @@
+[Unit]
+Description=Runs the Workaround Script that builds the kernel modules again so there is no ugly warning for missing$
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/vbox_workaround.sh -a
+
+[Install]
+WantedBy=multi-user.target
