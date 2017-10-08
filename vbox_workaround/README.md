@@ -9,15 +9,27 @@ To fix this automatically I created this script that installs as cron and looks 
   `./zzz_vbox_workaround.sh -i`
 
 ## Usage
-   `sudo vbox_workaround.sh [-i|--install] | [-r|--remove] | [-a|--auto] | [help]`
+   `sudo vbox_workaround.sh [-i|--install] | [-r|--remove] | [-a|--auto] | [-p|--path </path/to/install/folder/] | [help]`
 
-   >`[-i|--install]`: doesn't run. Just install Cron job.
+   >`-i|--install <CRON|SYSTEMD>: Don't run just install service/cron. If systemd is available this is prefered
    >
-   >`[-r|--remove]`: doesn't run. Just remove Cron Job.
+   >`-i|--install <CRON|SYSTEMD>: Don't run just install service/cron. If systemd is available this is prefered
    >
-   >`[-a|--auto]`: just run. Do not prompt or install anything
+   >`a|--auto: no interaction. Nothing will be prompted or installed.
+   >
+   >`-p|--path </path/to/install/>: specify install path for script. Default is /usr/local/bin
    >
    >`[help]`: show usage.
 
 ## Note
-systemd service usage is not implemented yet.
+It can use cron and systemd. It will use systemd by default.
+
+## Examples
+`sudo ./zzz_vbox_workaround.sh -i SYSTEMD -p /usr/bin/`
+This will copy the script into the dir /usr/bin and copy the service template to /etc/systemd/system and enable the service
+
+`sudo ./zzz_vbox_workaround.sh -r`
+This will remove the script file from the standard dir (/usr/local/bin/) and remove the systemd service AND the cron entry
+
+`sudo ./zzz_vbox_workaround.sh -r SYSTEMD -p /usr/bin/`
+This will remove the systemd service and the script file that was set up in the first example
