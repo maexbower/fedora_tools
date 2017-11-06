@@ -1,0 +1,20 @@
+[Desktop Entry]
+Comment[de_DE]=
+Comment=
+Exec=pkexec /usr/local/bin/setCPULimit.sh
+GenericName[de_DE]=setzt das Frequenz Limit der CPU
+GenericName=setzt das Frequenz Limit der CPU
+Icon=skrooge_less
+MimeType=
+Name[de_DE]=set CPU Limit
+Name=set CPU Limit
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=
+Categories=System;Settings;

@@ -1,0 +1,20 @@
+[Desktop Entry]
+Comment[de_DE]=
+Comment=
+Exec=pkexec /usr/local/bin/removeCPULimit.sh
+GenericName[de_DE]=entfernt das Frequenz Limit der CPU
+GenericName=entfernt das Frequenz Limit der CPU
+Icon=skrooge_more
+MimeType=
+Name[de_DE]=set CPU Limit
+Name=set CPU Limit
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=
+Categories=System;Settings;
